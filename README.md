@@ -16,17 +16,16 @@ To run the code, make sure you have the following Python libraries installed: Nu
 
 ## Code Explanation
 
-# S-DES Implementation:
+### S-DES Implementation:
 The S-DES algorithm involves key generation, permutation, and substitution processes to encrypt and decrypt 8-bit blocks of data.
 
-# Arnold Cat Map:
+### Arnold Cat Map:
 The Arnold Cat Map is a chaotic map that rearranges the pixels of the image in a way that makes the image appear scrambled. The inverse map is used to restore the original pixel arrangement.
 
-# Main Pipeline:
+### Main Pipeline:
 The main.py file handles loading the image, applying the Arnold Cat Map for scrambling, encrypting the scrambled image using S-DES, decrypting it, and finally unscrambling it to obtain the original image.
 
 ## Output Screenshots
-Here are some screenshots of the output from the program:
 
 ![Original Image](images/original_image.png)
 
