@@ -35,18 +35,22 @@ def main():
     decrypted_image_pil = Image.fromarray(unscrambled_image.astype(np.uint8))
 
     # Display the original, encrypted, and decrypted images
-    fig, axes = plt.subplots(1, 3, figsize=(15, 5))
+    fig, axes = plt.subplots(1, 4, figsize=(15, 5))
     axes[0].imshow(original_image)
     axes[0].set_title("Original Image")
     axes[0].axis('off')
-    
-    axes[1].imshow(encrypted_image_pil)
-    axes[1].set_title("Encrypted Image")
-    axes[1].axis('off')
-    
-    axes[2].imshow(decrypted_image_pil)
-    axes[2].set_title("Decrypted Image")
+
+    axes[1].imshow(scrambled_image)
+    axes[1].set_title("Scrambled Image (Iterations = "+str(iterations)+")")
+    axes[1].axis('off') 
+
+    axes[2].imshow(encrypted_image_pil)
+    axes[2].set_title("Encrypted Image")
     axes[2].axis('off')
+    
+    axes[3].imshow(decrypted_image_pil)
+    axes[3].set_title("Decrypted Image")
+    axes[3].axis('off')
     
     plt.show()
 
