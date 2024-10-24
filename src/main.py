@@ -2,12 +2,12 @@ import numpy as np
 import random
 from PIL import Image
 import matplotlib.pyplot as plt
-from sdes import *
-from arnold_cat_map import *
+from src.sdes import *
+from src.arnold_cat_map import *
 
 def main():
     # Load and prepare the image
-    image_path = 'test.jpeg'  # Path to your image
+    image_path = 'images/test.jpeg'  # Path to your image
     original_image = Image.open(image_path).convert('RGB')
     N = min(original_image.size)  # Make the image square
     original_image = original_image.resize((N, N))
